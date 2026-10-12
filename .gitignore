@@ -1,0 +1,16 @@
+# Local test sessions and evidence
+/run/
+/rollback/
+
+# Credentials and machine configuration
+.env
+.env.*
+!.env.example
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Editor and OS files
+.DS_Store
+Thumbs.db
