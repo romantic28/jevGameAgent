@@ -1,0 +1,367 @@
+{
+  "recorded_on": "2026-10-13",
+  "baseline_main": "ad3961e",
+  "branch": "experiment/jev-runtime-workflow-20261013",
+  "verdict": "workflow_goal_not_accepted",
+  "host_timing_latest": {
+    "run_id": "58725bffdd1945b7a30a860a67622ece",
+    "decision": {
+      "submitted": 1791856796741,
+      "returned": 1791856798332,
+      "jev_elapsed_from_ledger_pending": true
+    },
+    "feedback": [
+      {
+        "run_id": "58725bffdd1945b7a30a860a67622ece",
+        "submission_id": "verification-001",
+        "capture": [
+          {
+            "event": "ui_submission",
+            "at_ms": 1791856806588
+          },
+          {
+            "event": "ui_receipt",
+            "at_ms": 1791856806619
+          },
+          {
+            "event": "capture",
+            "started_ms": 1791856806619,
+            "completed_ms": 1791856806693
+          }
+        ],
+        "submitted": 1791856813235,
+        "returned": 1791856813394
+      }
+    ],
+    "start_submission_ms": 1791856785858,
+    "intervals_ms": {
+      "decision_client_return_to_input_submission": 8256,
+      "input_submission_to_receipt": 31,
+      "post_input_capture": 74,
+      "input_submission_to_capture_complete": 105,
+      "capture_complete_to_feedback_submission": 6542,
+      "feedback_call": 159,
+      "decision_advance_call": 1591
+    }
+  },
+  "provenance": "Ledger event timestamps and exported metrics read from local runtime.sqlite3/report.json; host timestamps collected inside functions.exec and cua_repl. Screenshots are conversation observations, not archived image files.",
+  "runs": [
+    {
+      "run_id": "2d66e02259214238bcdbfbdf9766e9cd",
+      "evidence_mode": "live",
+      "events": [
+        {
+          "seq": 1,
+          "kind": "run_started",
+          "created_at_utc": "2026-10-13T01:02:40.344432+00:00"
+        },
+        {
+          "seq": 2,
+          "kind": "run_finished",
+          "created_at_utc": "2026-10-13T01:03:22.540265+00:00"
+        },
+        {
+          "seq": 3,
+          "kind": "run_resumed",
+          "created_at_utc": "2026-10-13T01:08:28.867967+00:00"
+        },
+        {
+          "seq": 4,
+          "kind": "observation",
+          "created_at_utc": "2026-10-13T01:08:56.733589+00:00"
+        },
+        {
+          "seq": 5,
+          "kind": "context_built",
+          "created_at_utc": "2026-10-13T01:08:56.753523+00:00"
+        },
+        {
+          "seq": 6,
+          "kind": "decision_requested",
+          "created_at_utc": "2026-10-13T01:08:56.753560+00:00"
+        },
+        {
+          "seq": 7,
+          "kind": "decision_response",
+          "created_at_utc": "2026-10-13T01:08:58.226139+00:00"
+        },
+        {
+          "seq": 8,
+          "kind": "execution_intent",
+          "created_at_utc": "2026-10-13T01:08:58.226139+00:00"
+        },
+        {
+          "seq": 9,
+          "kind": "observation",
+          "created_at_utc": "2026-10-13T01:09:44.722805+00:00"
+        },
+        {
+          "seq": 10,
+          "kind": "execution_receipt",
+          "created_at_utc": "2026-10-13T01:09:44.722805+00:00"
+        },
+        {
+          "seq": 11,
+          "kind": "visual_verification",
+          "created_at_utc": "2026-10-13T01:09:44.722805+00:00"
+        },
+        {
+          "seq": 12,
+          "kind": "goal_complete",
+          "created_at_utc": "2026-10-13T01:09:44.722805+00:00"
+        }
+      ],
+      "metrics": {
+        "observations": 2,
+        "decision_requests": 1,
+        "decision_responses": 1,
+        "decision_elapsed_ms": 1354.71,
+        "http_attempts": 1,
+        "models": [
+          "jev-1.13.0"
+        ],
+        "execution_intents": 1,
+        "execution_receipts": 1,
+        "tool_rejections": 0,
+        "visual_verifications": 1,
+        "late_responses": 0
+      },
+      "ledger_intervals": {
+        "run_resumed_to_first_observation_seconds": 27.865622,
+        "decision_saved_to_execution_receipt_seconds": 46.496666,
+        "decision_saved_to_feedback_observation_seconds": 46.496666
+      }
+    },
+    {
+      "run_id": "d697843604754c4aa64dd480530999ab",
+      "evidence_mode": "live",
+      "events": [
+        {
+          "seq": 1,
+          "kind": "run_started",
+          "created_at_utc": "2026-10-13T01:19:35.552815+00:00"
+        },
+        {
+          "seq": 2,
+          "kind": "observation",
+          "created_at_utc": "2026-10-13T01:19:42.121867+00:00"
+        },
+        {
+          "seq": 3,
+          "kind": "context_built",
+          "created_at_utc": "2026-10-13T01:19:42.125882+00:00"
+        },
+        {
+          "seq": 4,
+          "kind": "decision_requested",
+          "created_at_utc": "2026-10-13T01:19:42.126391+00:00"
+        },
+        {
+          "seq": 5,
+          "kind": "decision_response",
+          "created_at_utc": "2026-10-13T01:19:43.538557+00:00"
+        },
+        {
+          "seq": 6,
+          "kind": "execution_intent",
+          "created_at_utc": "2026-10-13T01:19:43.538557+00:00"
+        },
+        {
+          "seq": 7,
+          "kind": "observation",
+          "created_at_utc": "2026-10-13T01:19:55.411179+00:00"
+        },
+        {
+          "seq": 8,
+          "kind": "execution_receipt",
+          "created_at_utc": "2026-10-13T01:19:55.411179+00:00"
+        },
+        {
+          "seq": 9,
+          "kind": "visual_verification",
+          "created_at_utc": "2026-10-13T01:19:55.411179+00:00"
+        },
+        {
+          "seq": 10,
+          "kind": "goal_complete",
+          "created_at_utc": "2026-10-13T01:19:55.411179+00:00"
+        }
+      ],
+      "metrics": {
+        "observations": 2,
+        "decision_requests": 1,
+        "decision_responses": 1,
+        "decision_elapsed_ms": 1301.0,
+        "http_attempts": 1,
+        "models": [
+          "jev-1.13.0"
+        ],
+        "execution_intents": 1,
+        "execution_receipts": 1,
+        "tool_rejections": 0,
+        "visual_verifications": 1,
+        "late_responses": 0
+      },
+      "ledger_intervals": {
+        "run_started_to_first_observation_seconds": 6.569052,
+        "run_started_to_goal_complete_seconds": 19.858364,
+        "decision_saved_to_execution_receipt_seconds": 11.872622,
+        "decision_saved_to_feedback_observation_seconds": 11.872622
+      }
+    },
+    {
+      "run_id": "758f6db4e8c74f20a74795651c5b460e",
+      "evidence_mode": "live",
+      "events": [
+        {
+          "seq": 1,
+          "kind": "run_started",
+          "created_at_utc": "2026-10-13T01:25:49.892635+00:00"
+        },
+        {
+          "seq": 2,
+          "kind": "observation",
+          "created_at_utc": "2026-10-13T01:26:08.129999+00:00"
+        },
+        {
+          "seq": 3,
+          "kind": "context_built",
+          "created_at_utc": "2026-10-13T01:26:08.133785+00:00"
+        },
+        {
+          "seq": 4,
+          "kind": "decision_requested",
+          "created_at_utc": "2026-10-13T01:26:08.133785+00:00"
+        },
+        {
+          "seq": 5,
+          "kind": "decision_response",
+          "created_at_utc": "2026-10-13T01:26:09.565541+00:00"
+        },
+        {
+          "seq": 6,
+          "kind": "execution_intent",
+          "created_at_utc": "2026-10-13T01:26:09.565541+00:00"
+        },
+        {
+          "seq": 7,
+          "kind": "observation",
+          "created_at_utc": "2026-10-13T01:26:45.930326+00:00"
+        },
+        {
+          "seq": 8,
+          "kind": "execution_receipt",
+          "created_at_utc": "2026-10-13T01:26:45.930326+00:00"
+        },
+        {
+          "seq": 9,
+          "kind": "visual_verification",
+          "created_at_utc": "2026-10-13T01:26:45.930326+00:00"
+        },
+        {
+          "seq": 10,
+          "kind": "goal_complete",
+          "created_at_utc": "2026-10-13T01:26:45.930326+00:00"
+        }
+      ],
+      "metrics": {
+        "observations": 2,
+        "decision_requests": 1,
+        "decision_responses": 1,
+        "decision_elapsed_ms": 1316.57,
+        "http_attempts": 1,
+        "models": [
+          "jev-1.13.0"
+        ],
+        "execution_intents": 1,
+        "execution_receipts": 1,
+        "tool_rejections": 0,
+        "visual_verifications": 1,
+        "late_responses": 0
+      },
+      "ledger_intervals": {
+        "run_started_to_first_observation_seconds": 18.237364,
+        "run_started_to_goal_complete_seconds": 56.037691,
+        "decision_saved_to_execution_receipt_seconds": 36.364785,
+        "decision_saved_to_feedback_observation_seconds": 36.364785
+      }
+    },
+    {
+      "run_id": "58725bffdd1945b7a30a860a67622ece",
+      "evidence_mode": "live",
+      "events": [
+        {
+          "seq": 1,
+          "kind": "run_started",
+          "created_at_utc": "2026-10-13T01:59:46.138407+00:00"
+        },
+        {
+          "seq": 2,
+          "kind": "observation",
+          "created_at_utc": "2026-10-13T01:59:56.746646+00:00"
+        },
+        {
+          "seq": 3,
+          "kind": "context_built",
+          "created_at_utc": "2026-10-13T01:59:56.751633+00:00"
+        },
+        {
+          "seq": 4,
+          "kind": "decision_requested",
+          "created_at_utc": "2026-10-13T01:59:56.751633+00:00"
+        },
+        {
+          "seq": 5,
+          "kind": "decision_response",
+          "created_at_utc": "2026-10-13T01:59:58.205371+00:00"
+        },
+        {
+          "seq": 6,
+          "kind": "execution_intent",
+          "created_at_utc": "2026-10-13T01:59:58.205371+00:00"
+        },
+        {
+          "seq": 7,
+          "kind": "observation",
+          "created_at_utc": "2026-10-13T02:00:13.239944+00:00"
+        },
+        {
+          "seq": 8,
+          "kind": "execution_receipt",
+          "created_at_utc": "2026-10-13T02:00:13.240942+00:00"
+        },
+        {
+          "seq": 9,
+          "kind": "visual_verification",
+          "created_at_utc": "2026-10-13T02:00:13.240942+00:00"
+        },
+        {
+          "seq": 10,
+          "kind": "goal_complete",
+          "created_at_utc": "2026-10-13T02:00:13.240942+00:00"
+        }
+      ],
+      "metrics": {
+        "observations": 2,
+        "decision_requests": 1,
+        "decision_responses": 1,
+        "decision_elapsed_ms": 1306.89,
+        "http_attempts": 1,
+        "models": [
+          "jev-1.13.0"
+        ],
+        "execution_intents": 1,
+        "execution_receipts": 1,
+        "tool_rejections": 0,
+        "visual_verifications": 1,
+        "late_responses": 0
+      },
+      "ledger_intervals": {
+        "run_started_to_first_observation_seconds": 10.608239,
+        "run_started_to_goal_complete_seconds": 27.102535,
+        "decision_saved_to_execution_receipt_seconds": 15.035571,
+        "decision_saved_to_feedback_observation_seconds": 15.034573
+      }
+    }
+  ]
+}

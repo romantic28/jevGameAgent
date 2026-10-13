@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<title>P0 browser binding probe</title>
+<style>
+  body { margin: 32px; font: 18px Arial, sans-serif; }
+  button { padding: 20px 36px; font: inherit; }
+</style>
+<h1>P0 browser binding probe</h1>
+<p>Isolated test page. No game, account, or network operation.</p>
+<button onclick="document.getElementById('result').textContent = 'Verified click count: 1'; this.disabled = true;">Verify one click</button>
+<p id="result">Verified click count: 0</p>
+</html>

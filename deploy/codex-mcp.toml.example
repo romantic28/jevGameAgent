@@ -1,0 +1,9 @@
+# P0 fixed entry for this Windows checkout. Credentials are inherited by name.
+# Preview/install with scripts/register_mcp.py; do not put the key here.
+[mcp_servers.jev-game-agent]
+command = 'D:\newWork\jevGameAgent\.venv\Scripts\python.exe'
+args = ["-m", "jev_game_agent"]
+cwd = 'D:\newWork\jevGameAgent'
+env_vars = ["TYPESAFE_API_KEY", "JEV_MODEL", "HTTP_PROXY", "HTTPS_PROXY", "ALL_PROXY", "NO_PROXY", "SSL_CERT_FILE", "SSL_CERT_DIR"]
+startup_timeout_sec = 30
+tool_timeout_sec = 150

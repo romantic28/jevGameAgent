@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jev-game-agent"
+version = "0.3.0"
+description = "Codex-hosted Jev decision runtime with a transactional execution ledger"
+requires-python = ">=3.12"
+dependencies = ["mcp==2.3.0", "typesafe-sdk==0.7.4", "pydantic==2.14.1", "httpx2==2.13.1"]
+
+[project.optional-dependencies]
+dev = ["pytest==9.1.1", "pytest-asyncio==1.4.0"]
+
+[project.scripts]
+jev-game-agent = "jev_game_agent.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]

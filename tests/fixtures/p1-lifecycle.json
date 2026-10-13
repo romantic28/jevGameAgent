@@ -1,0 +1,38 @@
+{
+  "provenance": "Simulated observations and submission receipts, not a historical game replay. Live mode uses actual Jev requests only; no UI is called.",
+  "start": {
+    "mode": "run",
+    "game_id": "p1-simulated-fixture",
+    "evidence_mode": "simulation",
+    "url": "http://example.test/game/",
+    "goal": "Within this simulated scene, close the notice so the menu can be inspected. Do not operate a real game.",
+    "completion_criteria": [{"id": "notice_closed", "description": "The simulated notice is absent and the simulated menu is visible"}],
+    "constraints": [{"id": "no-spend", "description": "No currency spending", "forbidden_tags": ["spend"]}]
+  },
+  "before": {
+    "frame": {
+      "browser_id": "simulation", "page_id": "simulation", "url": "http://example.test/game/",
+      "screenshot_ref": "simulation:before", "layout_ref": "simulation:before",
+      "viewport_width": 710, "viewport_height": 892, "device_pixel_ratio": 1
+    },
+    "page_label": "Simulated announcement",
+    "facts": ["A simulated announcement covers the menu; its close button is visible."],
+    "unknowns": ["This fixture contains no actual account progression."],
+    "candidates": [
+      {"id": "close_notice", "description": "Click the simulated close button to reveal the simulated menu", "semantic_target": "notice", "action": {"kind": "click", "screenshot_ref": "simulation:before", "x": 543, "y": 125}},
+      {"id": "observe", "description": "Obtain another simulated observation", "semantic_target": "page", "action": {"kind": "observe"}}
+    ]
+  },
+  "after": {
+    "frame": {
+      "browser_id": "simulation", "page_id": "simulation", "url": "http://example.test/game/",
+      "screenshot_ref": "simulation:after", "layout_ref": "simulation:after",
+      "viewport_width": 710, "viewport_height": 892, "device_pixel_ratio": 1
+    },
+    "page_label": "Simulated menu",
+    "facts": ["In this supplied simulation fixture, the announcement is absent and the menu is visible."],
+    "changes": ["The simulated announcement disappeared."],
+    "candidates": [],
+    "goal_evidence": [{"criterion_id": "notice_closed", "satisfied": true, "fact_indices": [0]}]
+  }
+}
